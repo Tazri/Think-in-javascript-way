@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Request</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: crimson
+        }
+        h1{
+            text-align: center;
+            font-family: cursive;
+        }
+        .btn-div{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn{
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-left: 10px;
+            border: 2px solid crimson;
+            background-color: transparent;
+            color: crimson;
+            font-family:'Courier New', Courier, monospace;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: all 0.4s linear;
+        }
+
+        .btn:hover{
+            background-color: crimson;
+            color: black;
+        }
+
+        .btn:active{
+            transform: scale(1.03);
+        }
+
+        .btn:focus{
+            outline: none;
+        }
+
+        .show-data{
+            min-width: 400px;
+            width: 80%;
+            min-height: 400px ;
+            background-color: #111;
+            margin: 40px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Comunicate outsite the world.</h1>
+        <div    class="btn-div">
+            <button class="btn" id="get-data">Get Data</button>
+            <button class="btn" id="send-data">Send Data</button>
+        </div>
+
+        <div class="show-data">
+
+        </div>
+    </div>
+
+
+    <script src="./ajaxRequest.js"></script>
+</body>
+</html>
